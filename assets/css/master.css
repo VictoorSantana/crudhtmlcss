@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6f6f6;
+}
+i {
+  background-color: transparent;
+}
+
+.imob-panel {
+  background-color: #8aa2eb;
+  width: 100%;
+  height: 250px;
+  z-index: -1;
+}
+.imob-nav {
+  z-index: 2;
+  background-color: #8aa2eb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.imob-nav-div h1{
+  display: inline-block;
+  font-size: 22px;
+  font-family: 'Segoe UI', sans-serif;
+  color:#eff6fb;
+  font-weight: normal;
+}
+.imob-nav button{
+  color:#eff6fb;
+}
+
+.imob-container {
+  /*background-color: red;*/
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: calc(100% - 18px);
+  padding: 3px;
+  position: absolute;
+  top: 55px;
+  left: 8px;
+  height: 50vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .imob-container {
+    top: 80px;
+    left: 25px;
+    width: calc(100% - 52px);
+  }
+}
+
+.imob-btn-icon {
+  border: none;
+  font-size: 20px;
+  padding: 8px;
+  background-color: transparent;
+  color: #95a2a8;
+}
+
+.imob-navmenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #364752;
+  height: 100vh;
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.3);
+  max-width: 330px;
+  z-index: 3;
+  transition: left .5s ease;
+}
+
+.imob-navmenu-closed {
+  left: -100%;
+}
+
+.imob-navmenu-opened {
+  left: 0;
+}
+
+
+.imob-navmenu-title {
+  padding: 12px 0;
+  font-size: 22px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: rgb(39,50,56);
+  color:white;
+  font-weight: normal;
+  text-align: center;
+}
+.imob-navmenu-btn {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  padding: 5px 10px;
+}
+.imob-navmenu-list {
+  overflow-y: scroll;
+  height: calc(100% - 97px);
+}
+.imob-navmenu-list li {
+  list-style: none;
+}
+.imob-navmenu-list li a {
+  display: block;
+  width: 100%;
+  padding: 15px 15px;
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #364752;
+  color: #d9d4d4;
+  border-bottom: 1px solid #455661;
+}
+.imob-navmenu-fotter {
+  background-color: rgb(39,50,56);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.imob-navmenu-fotter-list {
+  display: flex;
+  justify-content: space-around;
+}
+.imob-navmenu-fotter-list li{
+  list-style: none;
+}
+.imob-navmenu-fotter-list li button{
+  padding: 10px 15px;
+}
